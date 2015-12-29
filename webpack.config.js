@@ -20,7 +20,12 @@ module.exports = {
                     presets: ['es2015', 'react']
                 }
             },
-            {test: /\.css$/, loader: "style!css"}
+            {test: /\.css$/, loader: "style-loader!css-loader"},
+            {test: /\.svg$/, loader: 'url-loader?mimetype=image/svg+xml'},
+            {test: /\.woff$/, loader: 'url-loader?mimetype=application/font-woff'},
+            {test: /\.woff(\d+)?$/, loader: 'url-loader?mimetype=application/font-woff'},
+            {test: /\.eot$/, loader: 'url-loader?mimetype=application/font-woff'},
+            {test: /\.ttf$/, loader: 'url-loader?mimetype=application/font-woff'}
         ]
     }
 };
