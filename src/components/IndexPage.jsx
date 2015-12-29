@@ -1,12 +1,15 @@
 import React from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
 
+var file = require('../md/index.md');
+
 export default class IndexPage extends React.Component {
     constructor(props) {
         super(props);
     }
 
     render() {
+        console.log(file);
         return (
             <Grid>
                 <Row>
@@ -14,7 +17,8 @@ export default class IndexPage extends React.Component {
                         Test
                     </Col>
                     <Col xs={12} md={9}>
-                        Test
+                        <div dangerouslySetInnerHTML={{__html: file}}>
+                        </div>
                     </Col>
                 </Row>
             </Grid>

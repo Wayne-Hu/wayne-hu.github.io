@@ -25,7 +25,8 @@ module.exports = {
             {test: /\.woff$/, loader: 'url-loader?mimetype=application/font-woff'},
             {test: /\.woff(\d+)?$/, loader: 'url-loader?mimetype=application/font-woff'},
             {test: /\.eot$/, loader: 'url-loader?mimetype=application/font-woff'},
-            {test: /\.ttf$/, loader: 'url-loader?mimetype=application/font-woff'}
+            {test: /\.ttf$/, loader: 'url-loader?mimetype=application/font-woff'},
+            {test: /\.md$/, loader: "html!markdown"}
         ]
     }
 };
