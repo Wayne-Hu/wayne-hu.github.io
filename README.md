@@ -1,3 +1,1 @@
-# wayne-hu.github.io
-
-## 我的博客
+[我的博客](http://wayne-hu.github.io/)
