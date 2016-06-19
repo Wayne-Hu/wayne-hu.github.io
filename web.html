@@ -1,12 +1,12 @@
 ---
 layout: page
-title: 英语
-permalink: /english/
+title: Web
+permalink: /web/
 ---
 
 <ul class="post-list">
     {% for post in site.posts %}
-    {% if post.category == 'English' %}
+    {% if post.category == 'Web' %}
     <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -17,3 +17,4 @@ permalink: /english/
     {% endif %}
     {% endfor %}
 </ul>
+
