@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular - Data Binding
-category: web
+category: Web
 tags: Angular, 数据绑定, Data Binding
 ---
 
