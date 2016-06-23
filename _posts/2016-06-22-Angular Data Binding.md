@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Angular -- Data Binding
+description: 本文并非纯粹翻译Angular文档,只是在关键地方给出译文,在每段后给出自己的理解,并在最后对技术根据自己的经验给出一定的总结。Angular双向数据绑定。
 category: Web
-tags: Angular, Data Binding
+tags: [Angular, Data Binding]
 ---
 
 # Data Binding
 
-Data-binding in Angular apps is the automatic synchronization of data between the model and view components. The way that Angular implements data-binding lets you treat the model as the single-source-of-truth in your application. The view is a projection of the model at all times. When the model changes, the view reflects the change, and vice versa.
+Data-binding in Angular apps is the automatic synchronization of data between the model and view components. The way that Angular implements data-binding lets you treat the model as the single-source-of-truth (单一正确的数据源) in your application. The view is a projection of the model at all times (视图在任何时候都只是数据模型的投影). When the model changes, the view reflects the change, and vice versa.
 
 > 双向绑定，数据模型改变就会反映到页面上，而页面改变了数据，数据模型也会跟着变化。
 
