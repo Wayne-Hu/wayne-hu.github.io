@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Angular -- Data Binding
 category: Web
 tags: Angular, Data Binding

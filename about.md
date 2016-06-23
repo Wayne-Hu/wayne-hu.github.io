@@ -4,4 +4,6 @@ title: 我的简历
 permalink: /cv/
 ---
 
-![me](/images/me.jpg)
+
+
+
