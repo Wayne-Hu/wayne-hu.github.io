@@ -11,6 +11,15 @@
       <div class="wrapper">
         {{ content }}
       </div>
+
+      {% if page.tags %}
+      {% assign tags = page.tags %}
+      <ul>
+        {% for tag in tags %}
+        <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </div>
 
     {% include footer.html %}
