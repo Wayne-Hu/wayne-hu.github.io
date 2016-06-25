@@ -1,20 +1,25 @@
 ---
-layout: page
+layout: default
 title: Web
 permalink: /web/
 ---
 
-<ul class="post-list">
-    {% for post in site.posts %}
-    {% if post.category == 'Web' %}
-    <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="home">
 
-        <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-    </li>
-    {% endif %}
-    {% endfor %}
-</ul>
+    <h1 class="page-heading">我的文章</h1>
 
+    <ul class="post-list">
+        {% for post in site.posts %}
+        {% if post.category == 'Web' %}
+        <li>
+
+            <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </h2>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+</div>
